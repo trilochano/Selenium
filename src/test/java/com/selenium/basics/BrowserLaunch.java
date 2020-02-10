@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BrowserLaunch {
 
 	public static void main(String[] args) {
+		
 		System.setProperty("webdriver.gecko.driver", "D:\\Softwares\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.google.com");
@@ -48,7 +49,7 @@ public class BrowserLaunch {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		// driver.close();
+		driver.close();
 
 	}
 
